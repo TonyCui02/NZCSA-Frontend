@@ -158,7 +158,7 @@ export default function ResetPassword() {
                     />
                   )}
                 />
-                {errors.password && <span>This field is required</span>}
+                {errors.password && <span>Use 6 or more characters with a mix of letters, numbers & symbols</span>}
                 <PasswordStrengthIndicator input={values.passStrength} />
               </Grid>
               <Grid item xs={12}>
@@ -182,7 +182,6 @@ export default function ResetPassword() {
                     />
                   )}
                 />
-                {errors.confirm && <span>This field is required</span>}
               </Grid>
             </Grid>
           )}
